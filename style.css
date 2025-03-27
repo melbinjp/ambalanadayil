@@ -1,0 +1,189 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/images/hero/image.jpg'); /* Set hero image as background */
+    background-size: cover; /* Make it cover the entire viewport */
+    background-attachment: fixed; /* Keep it fixed during scrolling */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    color: #333; /* Default text color */
+}
+
+.temple-title {
+    text-align: center;
+    padding: 40px 20px; /* Increased padding for better visibility */
+    color: white; /* Title text color on the background */
+    font-size: 2.5em; /* Slightly larger title */
+    margin-bottom: 40px; /* Increased bottom margin */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background for the title for better readability */
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; /* Limit title width */
+}
+
+/* Pooja Timings Section */
+.pooja-timings {
+    padding: 40px 20px; /* Adjust padding */
+    text-align: center;
+    background-color: transparent; /* Make the section background transparent */
+    position: relative;
+    z-index: 2; /* Ensure it's above the background */
+}
+
+.pooja-timings.fixed-on-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Solid background when fixed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 20px; /* Adjust top padding when fixed */
+    padding-bottom: 20px; /* Adjust bottom padding when fixed */
+}
+
+.pooja-timings.fixed-on-top .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff; /* Keep the container background white */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pooja-timings .container {
+    max-width: 960px;
+    margin: 40px auto; /* Adjust top margin */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pooja-timings.fixed-on-top h1 {
+    margin-top: 10px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pooja-timings {
+        padding: 30px 15px;
+    }
+
+    .pooja-timings.fixed-on-top {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pooja-timings .container,
+    .pooja-timings.fixed-on-top .container {
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .temple-title {
+        font-size: 2em;
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pooja-timings {
+        padding: 20px 10px;
+    }
+
+    .pooja-timings.fixed-on-top {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .pooja-timings .container,
+    .pooja-timings.fixed-on-top .container {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .temple-title {
+        font-size: 1.7em;
+        padding: 20px 10px;
+    }
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green color */
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    z-index: 100; /* Ensure it's on top of other elements */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 40px; /* Adjust the size of the icon */
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-button {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .whatsapp-button img {
+        width: 30px;
+        height: 30px;
+    }
+}
